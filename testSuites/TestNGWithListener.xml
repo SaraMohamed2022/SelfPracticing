@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <listeners>
+        <listener class-name="selfPracticing.TestComponents.Listeners"/>
+    </listeners>
+    <test name="Error Validations">
+        <classes>
+            <class name="selfPracticing.tests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+<!--    <test name="Submit Order Test">-->
+<!--        <classes>-->
+<!--           <class name="selfPracticing.tests.SubmitOrderTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

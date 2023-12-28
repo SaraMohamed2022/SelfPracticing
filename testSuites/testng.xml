@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <listeners>
+        <listener class-name="selfPracticing.TestComponents.Listeners"/>
+    </listeners>
+    <!--
+    thread-count="5" >> Maximum number of methods will be executed within this test
+    !-->
+    <test thread-count="5" verbose="2" preserve-order="true" name="Error Validations">
+        <classes>
+            <class name="selfPracticing.tests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Submit Order Test">
+        <classes>
+           <class name="selfPracticing.tests.SubmitOrderTest"/>
+        </classes>
+    </test>
+</suite>
