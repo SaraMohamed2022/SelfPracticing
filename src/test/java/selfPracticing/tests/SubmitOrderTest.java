@@ -108,8 +108,7 @@ public class SubmitOrderTest extends BaseTest {
 
         return new Object[][]{{dataMap}, {dataMap2},{dataMap3}};
     }
-
-
+    
     @Test
     public void submitOrderWithDataFromJsonFile() throws IOException
     {
